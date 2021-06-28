@@ -9,7 +9,6 @@
 
 .container {
   width: 100%;
-  z-index: -1;
   height: 100%;
   background-position-x: center;
   background-position-y: bottom;
@@ -189,6 +188,67 @@ header.open .bar:nth-child(3) {
           transform: rotate(-45deg);
 }
 
+.egg-section {
+  height: 60vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.egg-section .egg-left {
+  width: 50%;
+  height: 100%;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.egg-section .egg-left .egg-left-text {
+  text-align: left;
+}
+
+.egg-section .egg-left .egg-left-text h1 {
+  font-family: 'Fraunces', serif;
+  font-size: 35px;
+  color: #23303e;
+}
+
+.egg-section .egg-left .egg-left-text p {
+  font-family: 'Barlow', sans-serif;
+  margin-top: 40px;
+  color: #818498;
+}
+
+.egg-section .egg-left .egg-left-text h3 {
+  font-family: 'Fraunces', serif;
+  margin-top: 40px;
+  color: #23303e;
+  display: inline-block;
+  border-bottom: 3px solid yellow;
+}
+
+.egg-section .egg-right {
+  background-image: url(../images/desktop/image-transform.jpg);
+  width: 50%;
+  background-size: cover;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 @media (max-width: 1000px) {
   .menu {
     display: inline-block;
@@ -197,6 +257,25 @@ header.open .bar:nth-child(3) {
     position: absolute;
     display: none;
     opacity: 0;
+  }
+  .egg-section {
+    height: 100vh;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .egg-section .egg-left {
+    width: 100%;
+    height: 50%;
+  }
+  .egg-section .egg-left .egg-left-text {
+    text-align: center;
+    margin-left: 0%;
+  }
+  .egg-section .egg-right {
+    width: 100%;
+    height: 50%;
   }
 }
 /*# sourceMappingURL=style.css.map */
