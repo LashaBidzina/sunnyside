@@ -319,6 +319,75 @@ header.open .bar:nth-child(3) {
   border-bottom: 3px solid #f2a6ff;
 }
 
+.fruit-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: 'Barlow', sans-serif;
+  height: 60vh;
+  width: 100%;
+}
+
+.fruit-section .cherry-div {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-image: url(../images/desktop/image-graphic-design.jpg);
+}
+
+.fruit-section .cherry-div .cherry-text {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  text-align: center;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.fruit-section .cherry-div .cherry-text h3 {
+  margin-bottom: 30px;
+  font-size: 25px;
+  color: #25564b;
+}
+
+.fruit-section .cherry-div .cherry-text p {
+  width: 400px;
+  color: #25564b;
+  font-size: 18px;
+}
+
+.fruit-section .mandarin-div {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-image: url(../images/desktop/image-photography.jpg);
+}
+
+.fruit-section .mandarin-div .mandarin-text {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  text-align: center;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.fruit-section .mandarin-div .mandarin-text h3 {
+  margin-bottom: 30px;
+  font-size: 25px;
+  color: #23303e;
+}
+
+.fruit-section .mandarin-div .mandarin-text p {
+  width: 400px;
+  color: #23303e;
+  font-size: 18px;
+}
+
 @media (max-width: 1000px) {
   .menu {
     display: inline-block;
@@ -365,6 +434,24 @@ header.open .bar:nth-child(3) {
   .glass-section .glass-right .glass-right-text {
     text-align: center;
     margin-left: 0%;
+  }
+  .fruit-section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    height: 130vh;
+  }
+  .fruit-section .cherry-div {
+    width: 100%;
+    height: 50%;
+    background-position-y: center;
+    background-position-x: center;
+  }
+  .fruit-section .mandarin-div {
+    height: 50%;
+    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */
