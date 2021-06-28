@@ -217,6 +217,7 @@ header.open .bar:nth-child(3) {
 }
 
 .egg-section .egg-left .egg-left-text {
+  margin-left: 20%;
   text-align: left;
 }
 
