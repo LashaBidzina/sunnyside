@@ -193,9 +193,6 @@ header.open .bar:nth-child(3) {
   .menu {
     display: inline-block;
   }
-  header {
-    height: 80vh;
-  }
   .links {
     position: absolute;
     display: none;
