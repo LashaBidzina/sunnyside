@@ -71,6 +71,12 @@ nav{
                     font-size: 18px;
                 }
             }
+            a{
+                transition: all 300ms ease-in-out;
+            }
+            a:hover{
+                color: rgb(185, 185, 185)
+            }
 
             a{
                 text-decoration: none;
@@ -196,6 +202,7 @@ header.open{
                 font-family: 'Fraunces', serif;
                 margin-top: 40px;
                 color: $very-dark-cyan;
+                text-transform: uppercase;
                 display: inline-block;
                 border-bottom: 3px solid yellow;
             }
@@ -208,6 +215,51 @@ header.open{
         height: 100%;
         background-position: center;
         background-repeat: no-repeat;
+    }
+}
+
+
+.glass-section{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    .glass-left{
+        width: 50%;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-image: url(../images/desktop/image-stand-out.jpg);
+    }
+    .glass-right{
+        width: 50%;
+        height: 100%;
+        background-color: $white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .glass-right-text{
+            margin-left: 20%;
+            text-align: left;
+            h1{
+                font-family: 'Fraunces', serif;
+                font-size: 35px;
+                color: $very-dark-cyan;
+            }
+            p{
+                font-family: 'Barlow', sans-serif;
+                margin-top: 40px;
+                color: $dark-grayish-blue;
+            }
+            h3{
+                font-family: 'Fraunces', serif;
+                margin-top: 40px;
+                color: $very-dark-cyan;
+                text-transform: uppercase;
+                display: inline-block;
+                border-bottom: 3px solid rgb(242, 166, 255);
+            }
+        }
     }
 }
 
@@ -237,4 +289,24 @@ header.open{
             height: 50%;
         }
     }
+    .glass-section{
+        height: 100vh;
+        flex-direction: column;
+        .glass-left{
+            width: 100%;
+            height: 50%;
+        }
+        
+        .glass-right{
+            width: 100%;
+            height: 50%;
+            .glass-right-text{
+                text-align: center;
+                margin-left: 0%;
+            }
+        }
+    }
 }
+
+
+
