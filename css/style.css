@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@700&display=swap");
 * {
   margin: 0;
@@ -490,6 +491,57 @@ header.open .bar:nth-child(3) {
 
 .image-section div img {
   width: 50%;
+}
+
+footer {
+  height: 30vh;
+  background: #5ed3b9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer h1 {
+  color: #1e4940;
+  font-family: 'Barlow', sans-serif;
+}
+
+footer .footer-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .footer-links li {
+  list-style-type: none;
+  padding: 40px;
+}
+
+footer .footer-links li a {
+  text-decoration: none;
+  color: #125a4a;
+  font-family: 'Barlow', sans-serif;
+}
+
+footer .footer-socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .footer-socials li {
+  padding: 20px;
+  list-style-type: none;
 }
 
 @media (max-width: 1000px) {

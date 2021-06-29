@@ -12,6 +12,7 @@ $grayish-blue: hsl(210, 4%, 67%);
 $white: hsl(0, 0%, 100%);
 
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&display=swap');
 // font-family: 'Barlow', sans-serif;
 // font-family: 'Fraunces', serif;
@@ -396,6 +397,37 @@ header.open{
     }
 }
 
+footer{
+    height: 30vh;
+    background: #5ed3b9;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    h1{
+        color: #1e4940;
+        font-family: 'Barlow', sans-serif;
+    }
+    .footer-links{
+        display: flex;
+        li{
+            list-style-type: none;
+            padding: 40px;
+            a{
+                text-decoration: none;
+                color: #125a4a;
+                font-family: 'Barlow', sans-serif;
+            }
+        }
+    }
+    .footer-socials{
+        display: flex;
+        li{
+            padding: 20px;
+            list-style-type: none;
+        }
+    }
+}
 
 @media(max-width: 1000px){
     .menu{
