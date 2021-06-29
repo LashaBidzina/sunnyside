@@ -388,6 +388,93 @@ header.open .bar:nth-child(3) {
   font-size: 18px;
 }
 
+.client-section {
+  width: 100%;
+}
+
+.client-section .client-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  padding: 13vh 0 5vh 0;
+}
+
+.client-section .client-title h1 {
+  text-transform: uppercase;
+  font-family: 'Fraunces', serif;
+  letter-spacing: 4px;
+  color: #818498;
+}
+
+.client-section .client-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  height: 50vh;
+}
+
+.client-section .client-cards .client-card {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  width: 33%;
+}
+
+.client-section .client-cards .client-card img {
+  border-radius: 50%;
+  width: 60px;
+}
+
+.client-section .client-cards .client-card p {
+  text-align: center;
+  font-size: 16px;
+  font-family: 'Barlow', sans-serif;
+  color: #818498;
+  padding: 50px 0;
+}
+
+.client-section .client-cards .client-card h1, .client-section .client-cards .client-card h4 {
+  font-family: 'Fraunces', serif;
+}
+
+.client-section .client-cards .client-card h4 {
+  color: #818498;
+  margin-top: 20px;
+  font-size: 15px;
+}
+
+.client-section .client-cards #emily-p {
+  width: 280px;
+}
+
+.client-section .client-cards #thomas-p {
+  width: 300px;
+}
+
+.client-section .client-cards #jennie-p {
+  width: 250px;
+}
+
 @media (max-width: 1000px) {
   .menu {
     display: inline-block;
@@ -452,6 +539,18 @@ header.open .bar:nth-child(3) {
   .fruit-section .mandarin-div {
     height: 50%;
     width: 100%;
+  }
+  .client-section {
+    height: 60vh;
+  }
+  .client-section .client-cards {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 /*# sourceMappingURL=style.css.map */
