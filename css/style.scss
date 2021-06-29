@@ -321,13 +321,14 @@ header.open{
 }
 
 .client-section{
+    margin-top: 50px;
+
     width: 100%;
     .client-title{
         display: flex;
         align-items: center;
         justify-content: center;
         width: 100%;
-        padding: 13vh 0 5vh 0;
         h1{
             text-transform: uppercase;
             font-family: 'Fraunces', serif;
@@ -339,7 +340,6 @@ header.open{
         display: flex;
         justify-content: space-between;
         width: 100%;
-        height: 50vh;
         .client-card{
             margin-top: 50px;
             display: flex;
@@ -380,6 +380,17 @@ header.open{
 }
 
 
+.image-section{
+    display: flex;
+    position: relative;
+    div{
+        width: 50%;
+        display: flex;
+        img{
+            width: 50%;
+        }
+    }
+}
 
 
 @media(max-width: 1000px){
@@ -440,10 +451,15 @@ header.open{
         }
     }
     .client-section{
-        height: 60vh;
         .client-cards{
             flex-direction: column;
             align-items: center;
+        }
+    }
+    .image-section{
+        flex-direction: column;
+        div{
+            width: 100%;
         }
     }
 }

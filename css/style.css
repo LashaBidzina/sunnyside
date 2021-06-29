@@ -389,6 +389,7 @@ header.open .bar:nth-child(3) {
 }
 
 .client-section {
+  margin-top: 50px;
   width: 100%;
 }
 
@@ -403,7 +404,6 @@ header.open .bar:nth-child(3) {
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
-  padding: 13vh 0 5vh 0;
 }
 
 .client-section .client-title h1 {
@@ -421,7 +421,6 @@ header.open .bar:nth-child(3) {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 100%;
-  height: 50vh;
 }
 
 .client-section .client-cards .client-card {
@@ -473,6 +472,24 @@ header.open .bar:nth-child(3) {
 
 .client-section .client-cards #jennie-p {
   width: 250px;
+}
+
+.image-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.image-section div {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.image-section div img {
+  width: 50%;
 }
 
 @media (max-width: 1000px) {
@@ -540,9 +557,6 @@ header.open .bar:nth-child(3) {
     height: 50%;
     width: 100%;
   }
-  .client-section {
-    height: 60vh;
-  }
   .client-section .client-cards {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -551,6 +565,15 @@ header.open .bar:nth-child(3) {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .image-section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .image-section div {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */
