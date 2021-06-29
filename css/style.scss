@@ -74,15 +74,20 @@ nav{
             a{
                 transition: all 300ms ease-in-out;
             }
-            a:hover{
-                color: rgb(185, 185, 185)
-            }
+            
 
             a{
                 text-decoration: none;
                 color: $white;
                 font-size: 18px;
                 font-family: 'Barlow', sans-serif;
+            }
+            &:nth-child(1),
+            &:nth-child(2),
+            &:nth-child(3){
+                a:hover{
+                    border-bottom: 3px solid yellow;
+                }
             }
         }
     }
@@ -322,7 +327,6 @@ header.open{
 
 .client-section{
     margin-top: 50px;
-
     width: 100%;
     .client-title{
         display: flex;
