@@ -295,7 +295,7 @@ header.open{
             p{
                 width: 400px;
                 color: $greenish-cyan;
-                font-size: 18px;
+                font-size: 16px;
             }
         }
     }
@@ -333,6 +333,7 @@ header.open{
         display: flex;
         align-items: center;
         justify-content: center;
+        text-align: center;
         width: 100%;
         h1{
             text-transform: uppercase;
@@ -498,7 +499,7 @@ footer{
             width: 100%;
         }
     }
+    footer{
+        height: 40vh;
+    }
 }
-
-
-

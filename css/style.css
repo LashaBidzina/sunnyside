@@ -356,7 +356,7 @@ header.open .bar:nth-child(3) {
 .fruit-section .cherry-div .cherry-text p {
   width: 400px;
   color: #25564b;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .fruit-section .mandarin-div {
@@ -404,6 +404,7 @@ header.open .bar:nth-child(3) {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  text-align: center;
   width: 100%;
 }
 
@@ -626,6 +627,9 @@ footer .footer-socials li {
   }
   .image-section div {
     width: 100%;
+  }
+  footer {
+    height: 40vh;
   }
 }
 /*# sourceMappingURL=style.css.map */
